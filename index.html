@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDGoDoDHcb6vQlwNn0gMkLgFWXAu49yWdw",
+    authDomain: "testfire-b2329.firebaseapp.com",
+    databaseURL: "https://testfire-b2329.firebaseio.com",
+    projectId: "testfire-b2329",
+    storageBucket: "testfire-b2329.appspot.com",
+    messagingSenderId: "972759405339"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+<body>
+<div class="col-md-12" style="margin-top: 100px;" align="center">
+	<div class="row">
+		<div class="col-md-6" style="margin-left: 330px">
+		<h1 id="fireHeading"></h1>
+		<input class="form-control" type="text" name="name" id="name" placeholder="input text">
+		<br>
+			<button class="btn btn-info btn-md" name="my_button" id="my_button" onclick="submitClick()">Send</button>
+		</div>
+	</div>
+</div>
+<script src="index.js" type="text/javascript"></script>
+</body>
+</html>
